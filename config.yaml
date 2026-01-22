@@ -1,0 +1,72 @@
+# Configuration for Visiting Card Detection System
+
+# Image Preprocessing Settings
+preprocessing:
+  target_dpi: 300
+  resize_width: 1200
+  denoise_strength: 7
+  adaptive_threshold_block_size: 11
+  adaptive_threshold_c: 2
+  deskew_threshold: 0.5
+  contrast_clip_limit: 2.0
+  contrast_tile_grid_size: [8, 8]
+
+# OCR Settings
+ocr:
+  language: 'eng'
+  oem: 3  # LSTM OCR Engine Mode
+  psm: 6  # Assume uniform block of text
+  tesseract_config: '--oem 3 --psm 6 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@.-+()/, '
+  confidence_threshold: 30
+
+# NLP Settings
+nlp:
+  min_name_length: 2
+  max_name_length: 50
+  min_name_words: 1
+  max_name_words: 5
+  common_titles:
+    - 'Mr'
+    - 'Mrs'
+    - 'Ms'
+    - 'Dr'
+    - 'Prof'
+  job_keywords:
+    - 'Manager'
+    - 'Director'
+    - 'CEO'
+    - 'CTO'
+    - 'CFO'
+    - 'Engineer'
+    - 'Developer'
+    - 'Designer'
+    - 'Analyst'
+    - 'Consultant'
+    - 'Executive'
+    - 'President'
+    - 'Vice President'
+    - 'VP'
+    - 'Head'
+    - 'Lead'
+    - 'Senior'
+    - 'Junior'
+    - 'Founder'
+    - 'Co-Founder'
+
+# Validation Settings
+validation:
+  min_email_length: 5
+  min_phone_length: 7
+  max_phone_length: 20
+  valid_email_domains:
+    - 'gmail.com'
+    - 'yahoo.com'
+    - 'outlook.com'
+    - 'hotmail.com'
+    - 'company.com'
+
+# UI Settings
+ui:
+  max_upload_size_mb: 10
+  supported_formats: ['jpg', 'jpeg', 'png', 'bmp', 'tiff']
+  show_debug_images: true

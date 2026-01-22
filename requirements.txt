@@ -1,0 +1,22 @@
+# Core Dependencies
+streamlit>=1.31.0
+opencv-python>=4.9.0
+opencv-contrib-python>=4.9.0
+pytesseract>=0.3.10
+Pillow>=10.2.0
+numpy>=1.26.0
+
+# NLP Dependencies
+nltk>=3.8.1
+
+# Data Processing
+pyyaml>=6.0.1
+pandas>=2.2.0
+
+# Utilities
+python-dotenv>=1.0.0
+regex>=2023.12.25
+
+# Optional for better accuracy
+phonenumbers>=8.13.0
+email-validator>=2.1.0
