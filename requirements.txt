@@ -1,17 +1,17 @@
 # Core Dependencies
-streamlit>=1.31.0
-opencv-python>=4.9.0
-opencv-contrib-python>=4.9.0
-pytesseract>=0.3.10
-Pillow>=10.2.0
-numpy>=1.26.0
+streamlit
+opencv-python
+opencv-contrib-python
+pytesseract
+Pillow
+numpy
 
 # NLP Dependencies
-nltk>=3.8.1
+nltk>
 
 # Data Processing
-pyyaml>=6.0.1
-pandas>=2.2.0
+pyyaml
+pandas
 
 # Utilities
 python-dotenv>=1.0.0
